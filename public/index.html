@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Tutorials Blogroll App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<h1>Backbone Tutorials Blog roll App</h1>
+	<table class="table">
+		<thead>
+		<tr>
+			<th>Author</th>
+			<th>Title</th>
+			<th>URL</th>
+			<th>Action</th>
+		</tr>
+			<td><input class="form-control author-input"></td>
+			<td><input class="form-control title-input"></td>
+			<td><input class="form-control url-input"></td>
+			<td>
+				<button class="btn btn-primary add-blog">Add</button>
+			</td>
+			<td>
+				<button class="btn btn-danger delete-blog">Delete</button>
+			</td>
+		<tr>
+		</tr>
+		</thead>
+		<tbody class="blogs-list">
+		</tbody>
+	</table>
+</div>
+<script type="text/template" class="blogs-list-template">
+<td><span class="author"><%=author%></span></td>
+<td><span class="title"><%=title%></span></td>
+<td><span class="url"><%=url%></span></td>
+<td><button class="btn btn-warning edit-blog">Edit</button></td>
+	<td><button class="btn btn-danger delete-blog">Delete</button></td>
+	<td><button style="display:none" class="btn btn-success update-blog">Update</button></td>
+	<td><button style="display:none" class="btn btn-danger cancel-blog">Cancel</button></td>
+</script>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/backbone-min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
